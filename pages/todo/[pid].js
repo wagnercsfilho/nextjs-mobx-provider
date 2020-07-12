@@ -72,6 +72,7 @@ const Todo = (props) => {
 };
 
 Todo.getInitialProps = async (ctx) => {
+  console.log(ctx);
   const res = await fetch(
     "https://jsonplaceholder.typicode.com/todos/" + ctx.query.pid
   );
